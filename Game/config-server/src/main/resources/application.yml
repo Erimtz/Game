@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Erimtz/examen-esp-backend-Martinez-Erika
+          uri: https://github.com/Erimtz/configDataGames
           default-label: main
           force-pull: true
           search-paths: configData

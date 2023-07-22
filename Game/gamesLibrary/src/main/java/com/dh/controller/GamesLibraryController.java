@@ -4,10 +4,12 @@ import com.dh.client.GamesServiceClient;
 import com.dh.service.GamesLibraryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
+@RequestMapping("/GamesLibrary")
 public class GamesLibraryController {
 
     private GamesLibraryService gamesLibraryService;

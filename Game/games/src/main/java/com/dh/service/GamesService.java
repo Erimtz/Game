@@ -15,8 +15,8 @@ public class GamesService {
         this.gamesRepository = gamesRepository;
     }
 
-    public List<Games> findByName(String name) {
-        return gamesRepository.findByName(name);
+    public List<Games> findByName(Integer id) {
+        return gamesRepository.findByName(String.valueOf(id));
     }
 
     public Games save(Games games) {
