@@ -18,21 +18,21 @@ services:
       - '3306'
       # Where our data will be persisted
 
-#  mysql2:
-#    image: mysql:5.7
-#    restart: always
-#    environment:
-#      MYSQL_DATABASE: 'gamesLibrary-dev2'    # Cambia el nombre de la base de datos para la instancia 2
-#      MYSQL_USER: 'usr-gamesLibrary'       # Cambia el nombre del usuario para la instancia 2
-#      MYSQL_PASSWORD: 'pwd-gamesLibrary'   # Cambia la contraseña para la instancia 2
-#      MYSQL_ROOT_PASSWORD: 'password' # Contraseña de root (puedes mantenerla igual)
-#    networks:
-#      - app-network
-#    ports:
-#      - '3308:3306'
-#    expose:
-#      - '3306'      # Puerto expuesto del contenedor 2
-#
+  mysql2:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'gamesLibrary-dev2'    # Cambia el nombre de la base de datos para la instancia 2
+      MYSQL_USER: 'usr-gamesLibrary'       # Cambia el nombre del usuario para la instancia 2
+      MYSQL_PASSWORD: 'pwd-gamesLibrary'   # Cambia la contraseña para la instancia 2
+      MYSQL_ROOT_PASSWORD: 'password' # Contraseña de root (puedes mantenerla igual)
+    networks:
+      - app-network
+    ports:
+      - '3308:3306'
+    expose:
+      - '3306'      # Puerto expuesto del contenedor 2
+
 
 networks:
   app-network:

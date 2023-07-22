@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/GamesLibrary")
+@RequestMapping("/gamesLibrary")
 public class GamesLibraryController {
 
     private GamesLibraryService gamesLibraryService;
